@@ -1,0 +1,22 @@
+/* フォントA */
+@font-face {
+  font-family: 'Mejiro';
+  src: url('../fonts/Mejiro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* フォントB */
+@font-face {
+  font-family: 'NotoColorEmoji';
+  src: url('../fonts/NotoColorEmoji-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Starlight全体に適用 */
+:root {
+  --sl-font: 'Mejiro', 'NotoColorEmoji', sans-serif;
+}
