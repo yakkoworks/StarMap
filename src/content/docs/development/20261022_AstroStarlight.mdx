@@ -1,0 +1,27 @@
+---
+title: Astro Starlight
+description: 20261022_Astro Starlight
+---
+
+## mdxファイルの自動整形
+
+Prettierを導入し,設定ファイルに以下を追記することでmdxの自動整形が行えるようになりました
+
+```
+	// settings.json
+   "[mdx]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+```
+
+### 一部を自動整形の対象外とする
+
+1行で書かないと,Astro Starlight側に正しく認識されないpタグ等の前には
+
+```
+  {/* <!-- prettier-ignore --> */}
+```
+
+を挟めば自動整形されなくなります

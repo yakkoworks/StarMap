@@ -10,6 +10,7 @@ export default defineConfig({
 			favicon: '/favicon.ico',
 			// defaultLocale: 'ja',
 			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			pagination: false,
 			logo: {
 				src: './src/assets/dotlaboratory.png',
 				replacesTitle: true,
