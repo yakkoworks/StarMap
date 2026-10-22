@@ -8,6 +8,7 @@ export default defineConfig({
 		starlight({
 			title: 'YakkoWorks - StarMap',
 			favicon: '/favicon.ico',
+			// defaultLocale: 'ja',
 			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			logo: {
 				src: './src/assets/dotlaboratory.png',
@@ -18,11 +19,8 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: '3D Modeling    🧊',
+					items: [{ autogenerate: { directory: '3dmodeling' } }],
 				},
 				{
 					label: 'Reference',
