@@ -19,12 +19,12 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: '3D Modeling    🧊',
+					label: '🧊    3D Modeling',
 					items: [{ autogenerate: { directory: '3dmodeling' } }],
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: '💻    Development ',
+					items: [{ autogenerate: { directory: 'development' } }],
 				},
 			],
 		}),
