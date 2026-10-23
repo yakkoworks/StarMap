@@ -38,7 +38,7 @@ export default defineConfig({
                         label: '💻 Development ',
                         collapsed: true,
                         items: [
-                            {label:"Astro Starlight", slug:"development/astrostarlight" },
+                            {label:"YakkoWorks StarMap", slug:"development/astrostarlight" },
                             // { autogenerate: { directory: 'development', collapsed: true } }
                         ],
                     },
