@@ -36,4 +36,14 @@
 
   /* 境界線 */
   --sl-color-hairline: #383126;
+
+}
+
+/* スマホ版のハンバーガーボタン */
+@media (max-width: 50rem) {
+  button.sl-menu-button  {
+    background-color: var(--sl-color-accent-high);
+    color: var(--sl-color-bg);
+    border-color: var(--sl-color-accent-high);
+  }
 }
