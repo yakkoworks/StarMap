@@ -22,21 +22,30 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: '🪐    StarMap ',
+					label: '🪐 StarMap ',
+					collapsed: false,
 					items: [
 						{
-							label: '🧊    3D Modeling',
-							items: [{ autogenerate: { directory: '3dmodeling' } }],
+							label: '🧊 3D Modeling',
+							collapsed: true,
+							items: [
+								// { autogenerate: { directory: '3dmodeling', collapsed: true} }
+								{label:"1-0_🌞レイ", slug:"3dmodeling/1-0" },
+							],
 						},
 						{
-							label: '💻    Development ',
-							items: [{ autogenerate: { directory: 'development' } }],
+							label: '💻 Development ',
+							collapsed: true,
+							items: [
+								{label:"Astro Starlight", slug:"development/astrostarlight" },
+								// { autogenerate: { directory: 'development', collapsed: true } }
+							],
 						},
 					],
 				},
 				{
-					label: '📝    Annotations ',
-					items: [{ autogenerate: { directory: 'annotations' } }],
+					label: '📝 Annotations ',
+					link: 'annotations'
 				},
 			],
 		}),
