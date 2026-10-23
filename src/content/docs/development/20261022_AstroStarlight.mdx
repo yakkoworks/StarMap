@@ -5,7 +5,8 @@ description: 20261022_Astro Starlight
 
 ## mdxファイルの自動整形
 
-Prettierを導入し,設定ファイルに以下を追記することでmdxの自動整形が行えるようになりました
+VSCodeに「Prettier」を導入し<br />
+設定ファイルに以下を追記することでmdxの自動整形が行えるようになりました
 
 ```
 	// settings.json
@@ -24,4 +25,13 @@ Prettierを導入し,設定ファイルに以下を追記することでmdxの�
   {/* <!-- prettier-ignore --> */}
 ```
 
-を挟めば自動整形されなくなります
+を挟めば自動整形されなくなります<br />
+
+<br />
+複数行にわたる場合は
+```
+{/* <!-- prettier-ignore-start --> */}
+自動整形から除外したい記述
+{/* <!-- prettier-ignore-end --> */}
+```
+こうすればOKです
