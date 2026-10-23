@@ -22,12 +22,21 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: '🧊    3D Modeling',
-					items: [{ autogenerate: { directory: '3dmodeling' } }],
+					label: '🪐    StarMap ',
+					items: [
+						{
+							label: '🧊    3D Modeling',
+							items: [{ autogenerate: { directory: '3dmodeling' } }],
+						},
+						{
+							label: '💻    Development ',
+							items: [{ autogenerate: { directory: 'development' } }],
+						},
+					],
 				},
 				{
-					label: '💻    Development ',
-					items: [{ autogenerate: { directory: 'development' } }],
+					label: '📝    Annotations ',
+					items: [{ autogenerate: { directory: 'annotations' } }],
 				},
 			],
 		}),
