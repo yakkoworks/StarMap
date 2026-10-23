@@ -7,14 +7,21 @@ hero:
   tagline: I always want to be creating something. <br>いつもなにかをつくっていたい🌞
   image:
     file: ../../assets/dotlaboratory.png
-  actions:
-    - text: 🧊 3D Modeling
-      link: ./3dmodeling/
-      icon: right-arrow
-    - text: 💻 Development
-      link: ./development/
-      icon: right-arrow
-    - text: 📝 Annotations
-      link: ./annotations/
-      variant: minimal
+  # actions:
+  #   - text: 🧊 3D Modeling
+  #     link: ./3dmodeling/
+  #     icon: right-arrow
+  #   - text: 💻 Development
+  #     link: ./development/
+  #     icon: right-arrow
+  #   - text: 📝 Annotations
+  #     link: ./annotations/
+  #     variant: minimal
 ---
+
+import { CardGrid,LinkCard } from "@astrojs/starlight/components"
+
+<CardGrid>
+  <LinkCard title="🧊 3D Modeling"  href="./3dmodeling/" description="VRoid Studio／Blender"/>
+  <LinkCard title="💻 Development" href="./development/" description="HTML／CSS／JavaScript／Cordova…"/>
+</CardGrid>
