@@ -32,7 +32,7 @@ export default defineConfig({
                         items: [
                             // { autogenerate: { directory: '3dmodeling', collapsed: true} }
                             {label:"🌞レイ", slug:"3dmodeling/1-0" }, 
-                            {label:"🔭☄️Major Arcana No.17 The Star", slug:"3dmodeling/majorarcanano17thestar" }, 
+                            {label:"☄️Major Arcana No.17 The Star", slug:"3dmodeling/majorarcanano17thestar" }, 
                         ],
                     },
                     {
