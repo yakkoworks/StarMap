@@ -15,7 +15,7 @@ export default defineConfig({
         pagination: false,
         tableOfContents: {
             minHeadingLevel: 2,
-            maxHeadingLevel: 5,
+            maxHeadingLevel:  6,
         },
         logo: {
             src: './src/assets/dotlaboratory.png',

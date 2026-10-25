@@ -65,8 +65,3 @@
 .sl-link-card .icon{
     color: var(--sl-color-gray-6);
 }
-
-/* 目次の「Overview」を非表示 */
-starlight-toc ul > li:first-child, mobile-starlight-toc ul > li:first-child {
-  display: none;
-}
