@@ -3,6 +3,19 @@ title: YakkoWorks StarMap
 description: 20261022_Astro Starlight
 ---
 
+## 記事をautogenerateの対象外にする
+対象外とする記事の Front Matter に `sidebar` キーを追加します<br />
+※StarMapでは各カテゴリのindexページにこの記述をしています
+```mdx
+---
+sidebar:
+  hidden: true
+---
+```
+
+
+
+
 ## mdxファイルの自動整形
 
 VSCodeに「Prettier」を導入し<br />

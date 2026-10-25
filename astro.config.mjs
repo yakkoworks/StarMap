@@ -11,9 +11,12 @@ export default defineConfig({
     integrations: [starlight({
         title: 'YakkoWorks - StarMap',
         favicon: '/favicon.ico',
-        // defaultLocale: 'ja',
         // social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
         pagination: false,
+        tableOfContents: {
+            minHeadingLevel: 2,
+            maxHeadingLevel: 5,
+        },
         logo: {
             src: './src/assets/dotlaboratory.png',
             replacesTitle: true,
@@ -30,17 +33,15 @@ export default defineConfig({
                         label: '🧊 3D Modeling',
                         collapsed: true,
                         items: [
-                            // { autogenerate: { directory: '3dmodeling', collapsed: true} }
-                            {label:"🌞レイ", slug:"3dmodeling/1-0" }, 
-                            {label:"☄️Major Arcana No.17 The Star", slug:"3dmodeling/majorarcanano17thestar" }, 
+                            { autogenerate: { directory: '3dmodeling', collapsed: true} }
                         ],
                     },
                     {
                         label: '💻 Development ',
                         collapsed: true,
                         items: [
-                            {label:"YakkoWorks StarMap", slug:"development/astrostarlight" },
-                            // { autogenerate: { directory: 'development', collapsed: true } }
+                            // {label:"YakkoWorks StarMap", slug:"development/astrostarlight" },
+                            { autogenerate: { directory: 'development', collapsed: true } }
                         ],
                     },
                 ],
