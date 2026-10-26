@@ -55,14 +55,40 @@ import { Steps } from "@astrojs/starlight/components";
 このあたりで一区切りつけておきます
 
 ## 衣装のアルファクリップ
+### 表面に細かい穴が開くとき
+塗りつぶしているはずなのに細かい穴が開いてしまう場合<br />
+アルファクリップの設定値を下げることで改善することがあります
+<div style={{ display: 'flex', width: '100%', gap: '0.8rem' }}>
+	<p style={{ flex: '1' }}>
+		![衣装のアルファクリップ‐01](./images/majorarcanano17thestar/20261026-101411.jpg)
+	</p>
+	<p style={{ flex: '1' }}>
+		![衣装のアルファクリップ‐02](./images/majorarcanano17thestar/20261026-101417.jpg)
+	</p>
+</div>
+<p style={{ textAlign: 'center', fontSize: '0.8rem', margin:'0.6rem 0' }}>0.5 ＞ 0.1</p>
+
+### Hacks：ガイドグリッドの利用
 はみ出す部分を透過させたテクスチャを作成する際は<br />
 元のテクスチャにグリッドガイドを薄く重ねると視認性が上がり大変便利です
 <div style={{ display: 'flex', width: '100%', gap: '0.8rem' }}>
 	<p style={{ flex: '1' }}>
-		![衣装のアルファクリップ‐01](./images/majorarcanano17thestar/20261025-205244.jpg)
+		![衣装のアルファクリップ‐03](./images/majorarcanano17thestar/20261025-205244.jpg)
 	</p>
 	<p style={{ flex: '1' }}>
-		![衣装のアルファクリップ‐02](./images/majorarcanano17thestar/20261025-205418.jpg)
+		![衣装のアルファクリップ‐04](./images/majorarcanano17thestar/20261025-205418.jpg)
 	</p>
 </div>
 <p style={{ textAlign: 'center', fontSize: '0.8rem', margin:'0.6rem 0' }}>違う種類のテンプレートを重ね着している場合は特に覚えておきたいですネ</p>
+
+## 衣装のパーツ間の隙間問題
+追加パーツを,オブジェクトを分けてつくっていると隙間が気になります<br />
+こんなときは,追加したパーツを少し内側に折り込むようにしてあげると自然に見えます
+<div style={{ display: 'flex', width: '100%', gap: '0.8rem' }}>
+	<p style={{ flex: '1' }}>
+		![衣装のパーツ間の隙間問題-01](./images/majorarcanano17thestar/20261026-101109.jpg)
+	</p>
+	<p style={{ flex: '1' }}>
+		![衣装のパーツ間の隙間問題-02](./images/majorarcanano17thestar/20261026-101141.jpg)
+	</p>
+</div>
