@@ -17,6 +17,9 @@ export default defineConfig({
             minHeadingLevel: 2,
             maxHeadingLevel:  6,
         },
+        components: {
+            Head: './src/components/Head.astro',
+        },
         logo: {
             src: './src/assets/dotlaboratory.png',
             replacesTitle: true,
@@ -51,5 +54,5 @@ export default defineConfig({
                 link: 'annotations'
             },
         ],
-		}), markdoc()],
+    }), markdoc()],
 });
