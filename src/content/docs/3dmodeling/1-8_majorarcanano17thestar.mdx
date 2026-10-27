@@ -1,6 +1,11 @@
 ---
 title: ☄️Major Arcana No.17 The Star
-description: ☄️Major Arcana No.17 The Star
+description: | 
+  自分の腕で拓く道、自分の脚で歩く道、自分の頭で生きる道
+  1つの大きな星と6つの小さな星のひかり,5つの道が導く「The Star」のものがたり
+
+  （ 自分に足りないさいごの1つの星は,自分のいちばん大切な人がもっている ）
+cover: ./images/majorarcanano17thestar/MajorArcanaNo17TheStar.png
 order: -2
 ---
 
@@ -94,4 +99,27 @@ import { Steps } from "@astrojs/starlight/components";
   </p>
 </div>
 <p style={{ textAlign: 'center', fontSize: '0.8rem',margin:'0.6rem 0' }}>☄️「なんでやね～ん！ ……なんちゃって！ ……えへへ……」</p>
-Neckのウエイトを減らすことでベストの襟元の変形が改善しました！
+`J_Bip_C_Neck` のウエイトを減らすことでベストの襟元の変形が改善しました！
+
+## 靴の立体感をお手軽に出す
+靴は,表面になる部分と後側に来る部分をあらかじめテクスチャ側で分けておき<br />
+ソリッド化モディファイアを適用して「マテリアルオフセット」機能で<br />
+それぞれ別のテクスチャを表示させることで,疑似的に立体感を出しています
+<div style={{ display: 'flex', width: '100%', gap: '0.8rem' }}>
+  <p style={{ flex: '1' }}>
+    ![靴の立体感をお手軽に出す-01](./images/majorarcanano17thestar/20261026-134508.png)
+  </p>
+  <p style={{ flex: '1' }}>
+    ![靴の立体感をお手軽に出す-02](./images/majorarcanano17thestar/20261026-134453.png)
+  </p>
+</div>
+<p style={{ textAlign: 'center', fontSize: '0.8rem', margin:'0.6rem 0' }}>モディファイア 適用前 ＞ 適用後</p>
+<div style={{ display: 'flex', width: '100%', gap: '0.8rem' }}>
+  <p style={{ flex: '1' }}>
+    ![靴の立体感をお手軽に出す-03](./images/majorarcanano17thestar/shoes_omote.png)
+  </p>
+  <p style={{ flex: '1' }}>
+    ![靴の立体感をお手軽に出す-04](./images/majorarcanano17thestar/shoes_ura.png)
+  </p>
+</div>
+<p style={{ textAlign: 'center', fontSize: '0.8rem', margin:'0.6rem 0' }}>靴底はどちらも忘れずに（最初片方だけ忘れてたからネ…）</p>

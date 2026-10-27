@@ -28,15 +28,15 @@
   --sl-color-accent-low: #45320d;
   --sl-color-accent: #f4b942;
   --sl-color-accent-high: #ffe4a0;
-
+  
   /* 背景色：ほんのり暖色の夜空 */
   --sl-color-bg: #181715;
   --sl-color-bg-nav: #211e19;
   --sl-color-bg-sidebar: #211e19;
-
+  
   /* 境界線 */
   --sl-color-hairline: #383126;
-
+  
 }
 
 /* スマホ版のハンバーガーボタン */
@@ -50,20 +50,20 @@
 
 /* リンクカード */
 .sl-link-card {
-    background-color: var(--sl-color-accent-high);
+  background-color: var(--sl-color-accent-high);
 }
 .sl-link-card:hover {
-    background-color: var(--sl-color-accent-high);
+  background-color: var(--sl-color-accent-high);
 }
 .sl-link-card .title{
-    color: var(--sl-color-bg);
+  color: var(--sl-color-bg);
 }
 .sl-link-card .description{
-    color: var(--sl-color-gray-6);
-    font-size: small;
+  color: var(--sl-color-gray-6);
+  font-size: small;
 }
 .sl-link-card .icon{
-    color: var(--sl-color-gray-6);
+  color: var(--sl-color-gray-6);
 }
 
 /* Lightbox対象の画像 */
@@ -75,4 +75,12 @@
 .sl-markdown-content a.glightbox:focus-visible {
   outline: 2px solid var(--sl-color-accent-high);
   outline-offset: 4px;
+}
+
+/* ページタイトル */
+.page-overview-wrapper{
+  margin-bottom: 0 !important;
+}
+.glightbox-clean .gslide-description{
+  display: none;
 }
