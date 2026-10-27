@@ -16,6 +16,11 @@
   font-display: swap;
 }
 
+/* body */
+html {
+  font-size: clamp(12px, 4vw, 15px); 
+}
+
 /* Starlight全体に適用 */
 :root {
   --sl-font: 'Mejiro', 'NotoColorEmoji', sans-serif;
@@ -42,6 +47,7 @@
 /* リンクカード */
 .sl-link-card {
   background-color: var(--sl-color-accent-high);
+  container-type: inline-size;
 }
 .sl-link-card:hover {
   background-color: var(--sl-color-accent-high);
@@ -52,6 +58,7 @@
 .sl-link-card .description{
   color: var(--sl-color-gray-6);
   font-size: small;
+  /* text-align: center; */
 }
 .sl-link-card .icon{
   color: var(--sl-color-gray-6);
@@ -78,9 +85,6 @@
 
 /* スマホ版 */
 @media (max-width: 50rem) {
-  body {
-    font-size: 0.9rem;
-  }
   /* ハンバーガーボタン */
   button.sl-menu-button  {
     background-color: var(--sl-color-accent-high);
