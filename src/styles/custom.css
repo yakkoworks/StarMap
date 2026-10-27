@@ -39,15 +39,6 @@
   
 }
 
-/* スマホ版のハンバーガーボタン */
-@media (max-width: 50rem) {
-  button.sl-menu-button  {
-    background-color: var(--sl-color-accent-high);
-    color: var(--sl-color-bg);
-    border-color: var(--sl-color-accent-high);
-  }
-}
-
 /* リンクカード */
 .sl-link-card {
   background-color: var(--sl-color-accent-high);
@@ -83,4 +74,17 @@
 }
 .glightbox-clean .gslide-description{
   display: none;
+}
+
+/* スマホ版 */
+@media (max-width: 50rem) {
+  body {
+    font-size: 0.9rem;
+  }
+  /* ハンバーガーボタン */
+  button.sl-menu-button  {
+    background-color: var(--sl-color-accent-high);
+    color: var(--sl-color-bg);
+    border-color: var(--sl-color-accent-high);
+  }
 }
